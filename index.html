@@ -1,0 +1,139 @@
+<!DOCTYPE html>  
+<html lang="en">  
+<head>  
+  <meta charset="UTF-8">  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">  
+  <title>Happy Birthday, [SHRAVZZ]!</title>  
+  <style>  
+    body {  
+      font-family: Arial, sans-serif;  
+      background-color: #fce4ec;  
+      color: #880e4f;  
+      text-align: center;  
+      margin: 0;  
+      padding: 0;  
+      overflow: auto; /* Allow scrolling */  
+    }  
+    header {  
+      background-color: #f8bbd0;  
+      padding: 20px;  
+    }  
+    h1 {  
+      font-size: 3em;  
+    }  
+    .memory-gallery img {  
+      width: 200px;  
+      height: auto;  
+      margin: 10px;  
+      border-radius: 10px;  
+    }  
+    footer {  
+      background-color: #f8bbd0;  
+      padding: 10px;  
+      margin-top: 20px;  
+    }  
+    .heart {  
+      position: absolute;  
+      width: 50px;  
+      height: 50px;  
+      background-color: #ff1744;  
+      transform: rotate(-45deg);  
+      animation: heartbeat 1s infinite;  
+      opacity: 0.9;  
+    }  
+    .heart::before,  
+    .heart::after {  
+      content: '';  
+      position: absolute;  
+      width: 50px;  
+      height: 50px;  
+      background-color: #ff1744;  
+      border-radius: 50%;  
+    }  
+    .heart::before {  
+      top: -25px;  
+      left: 0;  
+    }  
+    .heart::after {  
+      left: 25px;  
+      top: 0;  
+    }  
+
+    @keyframes heartbeat {  
+      0%, 100% {  
+        transform: scale(1);  
+      }  
+      50% {  
+        transform: scale(1.2);  
+      }  
+    }  
+  </style>  
+</head>  
+<body>  
+  <header>  
+    <h1>Happy Birthday, [BUJJI💐]!</h1>  
+    <p>You are the light of my life.🎉</p>  
+  </header>  
+
+  <section class="timeline">  
+    <h2>Our Journey Together</h2>  
+    <p>Remember these special moments? ❤️</p>  
+    <div class="memory-gallery">  
+      <img src="./WhatsApp Image 2025-03-22 at 07.54.51_79f12390.jpg" alt="Memory 1">  
+      <img src="./WhatsApp Image 2025-03-22 at 07.54.55_007c3a88.jpg" alt="Memory 2">  
+      <img src="./WhatsApp Image 2025-03-22 at 07.54.55_7049acba.jpg" alt="Memory 3">  
+    </div>  
+  </section>  
+
+  <section class="love-letter">  
+    <h2>A Special Message Just for You</h2>  
+    <p>MY DEAR BABY💗💟💌</p>  
+    <p>[My Dear❣️😍🥰 [shravzz], On this special day, I find myself overwhelmed with gratitude and love for having you in my life. You are the light that brightens my darkest days, the magic that soothes my soul, and the reason behind my every smile.</p>  
+
+    <p>Every moment we’ve shared is overwhelmed in my heart like a beautiful painting, each stroke filled with love and laughter. From the way you laugh at my silly jokes to the kindness you show to everyone around you, you’ve taught me what true beauty and compassion look like.</p>  
+
+    <p>I cherish the memories we’ve created together—the long walks, endless conversations, and the simple joy of just being by your side. You’ve made my life more colorful and meaningful than I ever thought possible.</p>  
+
+    <p>As we celebrate this day that marks your birth, I want you to know that my love for you grows stronger with every passing moment. You are not just my partner, but also my best friend, my confidante, and my forever inspiration.</p>  
+
+    <p>Thank you for being you—kind, beautiful, and irreplaceable. I promise to always stand by your side, to cherish you, and to make every day as special as this one.</p>  
+
+    <p>With all my love, [KANNA😊]</p>  
+  </section>  
+
+  <footer>  
+    <p>Made with 💕 by KANNA😊</p>  
+  </footer>  
+
+  <script>  
+    // Function to create animated hearts  
+    function createHeart() {  
+      const heart = document.createElement('div');  
+      heart.className = 'heart';  
+      // Position the heart randomly within the viewport  
+      heart.style.left = Math.random() * window.innerWidth + 'px';  
+      heart.style.top = Math.random() * window.innerHeight + 'px';  
+
+      document.body.appendChild(heart);  
+      
+      // Animate the heart to rise and fade out  
+      heart.animate([  
+        { transform: 'translateY(0)', opacity: 1 },  
+        { transform: 'translateY(-100px)', opacity: 0 }  
+      ], {  
+        duration: 2000,  
+        easing: 'ease-in',  
+        fill: 'forwards'  
+      });  
+
+      // Remove the heart after the animation ends  
+      heart.addEventListener('animationend', () => {  
+        heart.remove();  
+      });  
+    }  
+
+    // Create hearts periodically  
+    setInterval(createHeart, 500); // Create a heart every 500 milliseconds  
+  </script>  
+</body>  
+</html>  
